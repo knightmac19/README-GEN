@@ -1,3 +1,3 @@
-# README template
-### This is a temporary placeholder
+# super duper
+### super duper example sentence of super duper project
 
