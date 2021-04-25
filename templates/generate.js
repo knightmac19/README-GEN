@@ -17,6 +17,7 @@ ${makeTechBadges(obj.languages)}
 - [Description](#description)
 - [Motivation](#motivation)
 - [Usage](#usage)
+- [Screenshots](#screenshots)
 - [Challenges](#challenges)
 - [Contributors](#contributors)  
 - [License](#license)
@@ -33,6 +34,9 @@ ${obj.motivation}
 ## <a name="usage"></a> Usage
 [Contents](#contents)  
 ${obj.usage}
+
+## <a name="screenshots"></a> Screenshots
+[Contents](#contents)  
 
 ## <a name="challenges"></a> Challenges & Lessons Learned
 [Contents](#contents)  
