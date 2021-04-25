@@ -1,8 +1,8 @@
-const CreativeBadge = () => {
+const Badge = () => {
     return `[![License: CC0-1.0](https://img.shields.io/badge/License-CC0%201.0-lightgrey.svg)](http://creativecommons.org/publicdomain/zero/1.0/)`
 };
 
-const CreativeLicense = () => {
+const License = () => {
     return `Creative Commons Legal Code
 
     CC0 1.0 Universal
@@ -127,6 +127,6 @@ const CreativeLicense = () => {
 };
 
 module.exports = {
-    CreativeBadge: CreativeBadge,
-    CreativeLicense: CreativeLicense
+    Badge: Badge,
+    License: License
 };

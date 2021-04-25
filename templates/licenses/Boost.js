@@ -1,8 +1,8 @@
-const BoostBadge = () => {
+const Badge = () => {
     return `[![License](https://img.shields.io/badge/License-Boost%201.0-lightblue.svg)](https://www.boost.org/LICENSE_1_0.txt)`
 };
 
-const BoostLicense = () => {
+const License = () => {
     return `Boost Software License - Version 1.0 - August 17th, 2003
 
     Permission is hereby granted, free of charge, to any person or organization
@@ -30,6 +30,6 @@ const BoostLicense = () => {
 };
 
 module.exports = {
-    BoostBadge: BoostBadge,
-    BoostLicense: BoostLicense
+    Badge: Badge,
+    License: License
 };

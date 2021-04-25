@@ -1,8 +1,8 @@
-const EclipseBadge = () => {
+const Badge = () => {
     return `[![License](https://img.shields.io/badge/License-EPL%201.0-red.svg)](https://opensource.org/licenses/EPL-1.0)`
 };
 
-const EclipseLicense = () => {
+const License = () => {
     return `title: Eclipse Public License 1.0
     spdx-id: EPL-1.0
     
@@ -240,6 +240,6 @@ const EclipseLicense = () => {
 };
 
 module.exports = {
-    EclipseBadge: EclipseBadge,
-    EclipseLicense: EclipseLicense
+    Badge: Badge,
+    License: License
 };

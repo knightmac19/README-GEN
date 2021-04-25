@@ -1,7 +1,12 @@
 const generate = (obj) => {
 
     return `# ${obj.title}
-### ${obj.description}
+    
+### ${obj.short}
+
+${obj.licenseBadge}
+
+${obj.licenseText}
 
 `
 };

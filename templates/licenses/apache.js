@@ -1,8 +1,8 @@
-const apacheBadge = () => {
+const Badge = () => {
     return `[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)`
 };
 
-const apacheLicense = () => {
+const License = () => {
     return `TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
 
     1. Definitions.
@@ -204,6 +204,6 @@ const apacheLicense = () => {
 };
 
 module.exports = {
-    apacheBadge: apacheBadge,
-    apacheLicense: apacheLicense
+    Badge: Badge,
+    License: License
 };

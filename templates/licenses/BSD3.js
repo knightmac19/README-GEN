@@ -1,8 +1,8 @@
-const BDS3Badge = () => {
+const Badge = () => {
     return `[![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)`
 };
 
-const BDS3License = () => {
+const License = () => {
     return `Copyright (c) <year>, <copyright holder>
     All rights reserved.
     
@@ -33,6 +33,6 @@ const BDS3License = () => {
 };
 
 module.exports = {
-    BDS3Badge: BDS3Badge,
-    BDS3License: BDS3License
+    Badge: Badge,
+    License: License
 };
