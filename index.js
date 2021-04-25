@@ -16,6 +16,12 @@ const Creative = require('./templates/licenses/Creative');
 var object = {
     title: 'README template',
     short: 'This is a temporary placeholder',
+    languages: '',
+    long:'',
+    motivation: '',
+    usage: '',
+    challenges: '',
+    contributors: '',
     year: '',
     holder: '',
     licenseText: '',
@@ -24,20 +30,9 @@ var object = {
 
 
 
-var tableOfContents = [];
 
 const init = () => {
     console.log('welcome to README generator');
-    var licChoices = [
-        'None',
-        'Apache License 2.0',
-        'MIT License',
-        'BSD 2-Clause "Simplified" License',
-        'BSD 3-Clause "New" or "Revised" License',
-        'Boost Software Licese 1.0',
-        'Creative Commons Zero v1.0 Universal',
-        'Eclipse Public License 2.0',
-    ];
 
     const titlePrompt = () => {
         inquirer.prompt([
@@ -50,6 +45,36 @@ const init = () => {
                 type:'input',
                 name:'short',
                 message: 'Please provide a one-to-two sentence description.'
+            },
+            {
+                type:'input',
+                name:'languages',
+                message: 'What languages were used? Select all that apply.'
+            },
+            {
+                type:'input',
+                name:'long',
+                message: 'Please provide a longer description of what the application does.'
+            },
+            {
+                type:'input',
+                name:'motivation',
+                message: 'What was the motivation to develop the project?'
+            },
+            {
+                type:'input',
+                name:'usage',
+                message: 'How can users use the application?'
+            },
+            {
+                type:'input',
+                name:'challenges',
+                message: 'What were some challenges / lessons learned during the development process?'
+            },
+            {
+                type:'input',
+                name:'contributors',
+                message: 'Who contributed to the project?'
             },
             {
                 type:'input',
