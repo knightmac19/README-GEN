@@ -8,6 +8,7 @@ ${obj.licenseBadge}
 
 ## <a name="languages"></a> Languages
 [Contents](#contents)  
+${obj.languages.join(' ')}
 
 ## <a name="contents"></a>  Contents
 - [Languages](#languages)
@@ -15,12 +16,33 @@ ${obj.licenseBadge}
 - [Motivation](#motivation)
 - [Usage](#usage)
 - [Challenges](#challenges)
-- [License](#license)
 - [Contributors](#contributors)  
+- [License](#license)
 
-${obj.licenseText}
 
-`
+## <a name="description"></a> Description
+[Contents](#contents)  
+${obj.long}
+
+## <a name="motivation"></a> Motivation
+[Contents](#contents)  
+${obj.motivation}
+
+## <a name="usage"></a> Usage
+[Contents](#contents)  
+${obj.usage}
+
+## <a name="challenges"></a> Challenges & Lessons Learned
+[Contents](#contents)  
+${obj.challenges}
+
+## <a name="contributors"></a> Contributors
+[Contents](#contents)  
+${obj.contributors}
+
+## <a name="license"></a> License
+[Contents](#contents)  
+${obj.licenseText}`
 };
 
 module.exports = generate;
