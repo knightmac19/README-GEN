@@ -16,7 +16,7 @@ const Creative = require('./templates/licenses/Creative');
 var object = {
     title: 'README template',
     short: 'This is a temporary placeholder',
-    languages: '',
+    languages: [],
     long:'',
     motivation: '',
     usage: '',
@@ -47,9 +47,10 @@ const init = () => {
                 message: 'Please provide a one-to-two sentence description.'
             },
             {
-                type:'input',
+                type:'checkbox',
                 name:'languages',
-                message: 'What languages were used? Select all that apply.'
+                message: 'What languages / technologies were used? Select all that apply.',
+                choices: ['HTML', 'CSS', 'JavaScript', 'JSON', 'Markdown', 'Bootstrap', 'MaterialUI', 'Pug', 'Handlebars', 'inquirer', 'Node', 'React']
             },
             {
                 type:'input',
@@ -125,6 +126,12 @@ const init = () => {
             
             object.title = a.title
             object.short = a.short
+            object.languages = a.languages
+            object.long = a.long
+            object.motivation = a.motivation
+            object.usage = a.usage
+            object.challenges = a.challenges
+            object.contributors = a.contributors
             object.year = a.year
             object.holder = a.holder
             // console.log(object)
