@@ -50,7 +50,41 @@ const init = () => {
                 type:'checkbox',
                 name:'languages',
                 message: 'What languages / technologies were used? Select all that apply.',
-                choices: ['HTML', 'CSS', 'JavaScript', 'JSON', 'Markdown', 'Bootstrap', 'MaterialUI', 'Pug', 'Handlebars', 'inquirer', 'Node', 'React']
+                choices: [
+                    'HTML5', 
+                    'CSS3',
+                    'SASS',
+                    'JavaScript',
+                    'TypeScript', 
+                    'Python',
+                    'Node.js', 
+                    'Markdown', 
+                    'Express.js',
+                    'React',
+
+                    'React Native',
+                    'Vue.js',
+                    'Angular',
+                    'Redux',
+                    'jQuery',
+                    'Bootstrap', 
+                    'Material UI', 
+                    'Visual Studio Code',
+                    'Visual Studio',
+                    'Vim',
+                    
+                    'Sublime Text',
+                    'Git',
+                    'GitLab',
+                    'GitHub',
+                    'MySQL',
+                    'Postgres',
+                    'MongoDB',
+                    'SQLite',
+                    'Oracle',
+                    'Jest',
+                    'Mocha'
+                ]
             },
             {
                 type:'input',

@@ -1,3 +1,5 @@
+const makeTechBadges = require('./makeTechBadges');
+
 const generate = (obj) => {
 
     return `# ${obj.title}
@@ -8,7 +10,7 @@ ${obj.licenseBadge}
 
 ## <a name="languages"></a> Languages
 [Contents](#contents)  
-${obj.languages.join(' ')}
+${makeTechBadges(obj.languages)}
 
 ## <a name="contents"></a>  Contents
 - [Languages](#languages)
