@@ -128,6 +128,7 @@ const init = () => {
         ]).then(a => {
             let year = a.year;
             let holder = a.holder
+            object = a;
             switch(a.license) {
                 case 'None':
                     object.licenseText = none;
@@ -150,16 +151,6 @@ const init = () => {
                 
             }
             
-            object.title = a.title
-            object.short = a.short
-            object.languages = a.languages
-            object.long = a.long
-            object.motivation = a.motivation
-            object.usage = a.usage
-            object.challenges = a.challenges
-            object.contributors = a.contributors
-            object.year = a.year
-            object.holder = a.holder
             writeREADME(object)
         })
     };

@@ -1,10 +1,10 @@
-# Super Awesome Application That Does Stuff
+# Defining object var in one line above switch statements
     
-### lorem ipsum lorem ipsum
+### lorem ipsum
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)  
 
-## <a name="languages"></a> Languages
+## <a name="languages"></a> Languages & Technologies
 [Contents](#contents)  
 <img alt="HTML5" src="https://img.shields.io/badge/html5-%23E34F26.svg?&style=for-the-badge&logo=html5&logoColor=white"/>
                  <img alt="CSS3" src="https://img.shields.io/badge/css3-%231572B6.svg?&style=for-the-badge&logo=css3&logoColor=white"/>
@@ -14,6 +14,7 @@
                  <img alt="Markdown" src="https://img.shields.io/badge/markdown-%23000000.svg?&style=for-the-badge&logo=markdown&logoColor=white"/>
                  <img alt="Express.js" src="https://img.shields.io/badge/express.js-%23404d59.svg?&style=for-the-badge"/>
                  <img alt="React" src="https://img.shields.io/badge/react-%2320232a.svg?&style=for-the-badge&logo=react&logoColor=%2361DAFB"/>
+                 <img alt="Redux" src="https://img.shields.io/badge/redux-%23593d88.svg?&style=for-the-badge&logo=redux&logoColor=white"/>
                  <img alt="jQuery" src="https://img.shields.io/badge/jquery-%230769AD.svg?&style=for-the-badge&logo=jquery&logoColor=white"/>
                  <img alt="Bootstrap" src="https://img.shields.io/badge/bootstrap-%23563D7C.svg?&style=for-the-badge&logo=bootstrap&logoColor=white"/>
                  <img alt="Visual Studio Code" src="https://img.shields.io/badge/VisualStudioCode-0078d7.svg?&style=for-the-badge&logo=visual-studio-code&logoColor=white"/>
@@ -28,6 +29,7 @@
 - [Description](#description)
 - [Motivation](#motivation)
 - [Usage](#usage)
+- [Screenshots](#screenshots)
 - [Challenges](#challenges)
 - [Contributors](#contributors)  
 - [License](#license)
@@ -35,15 +37,18 @@
 
 ## <a name="description"></a> Description
 [Contents](#contents)  
-lorem ipsum lorem ipsum lorem ipsum
+lorem ipsum lorem ipsum
 
 ## <a name="motivation"></a> Motivation
 [Contents](#contents)  
-To take over the world!
+TO TAKE OVER THE WORLD WITH CODE!
 
 ## <a name="usage"></a> Usage
 [Contents](#contents)  
-`git clone npm i npm start`
+`git clone --> npm i --> npm start`
+
+## <a name="screenshots"></a> Screenshots
+[Contents](#contents)  
 
 ## <a name="challenges"></a> Challenges & Lessons Learned
 [Contents](#contents)  
@@ -51,7 +56,7 @@ READ THE DOCS!
 
 ## <a name="contributors"></a> Contributors
 [Contents](#contents)  
-Patrick Dunn
+Patrick Michael Dunn
 
 ## <a name="license"></a> License
 [Contents](#contents)  
