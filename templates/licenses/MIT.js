@@ -16,18 +16,3 @@ module.exports = {
     Badge: Badge,
     License: License
 };
-
-var object = {
-    title: 'README template',
-    short: 'This is a temporary placeholder',
-    languages: [],
-    long:'',
-    motivation: '',
-    usage: '',
-    challenges: '',
-    contributors: '',
-    year: '',
-    holder: '',
-    licenseText: '',
-    licenseBadge: ''
-};

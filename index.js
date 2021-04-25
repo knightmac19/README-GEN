@@ -3,19 +3,14 @@ const generate = require('./templates/generate');
 const fs = require('fs');
 
 const none = '';
-
 const MIT = require('./templates/licenses/MIT');
 const BSD2 = require('./templates/licenses/BSD2');
-
 const Boost = require('./templates/licenses/Boost');
 const Creative = require('./templates/licenses/Creative');
 
-
-
-
 var object = {
-    title: 'README template',
-    short: 'This is a temporary placeholder',
+    title: '',
+    short: '',
     languages: [],
     long:'',
     motivation: '',
@@ -27,9 +22,6 @@ var object = {
     licenseText: '',
     licenseBadge: ''
 };
-
-
-
 
 const init = () => {
     console.log('welcome to README generator');
@@ -168,7 +160,6 @@ const init = () => {
             object.contributors = a.contributors
             object.year = a.year
             object.holder = a.holder
-            // console.log(object)
             writeREADME(object)
         })
     };
@@ -187,4 +178,3 @@ const init = () => {
 }
 
 init();
-
