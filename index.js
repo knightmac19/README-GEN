@@ -3,14 +3,14 @@ const generate = require('./templates/generate');
 const fs = require('fs');
 
 const none = '';
-const ApacheLic = require('./templates/licenses/apache.js');
+
 const MIT = require('./templates/licenses/MIT');
 const BSD2 = require('./templates/licenses/BSD2');
-const BSD3 = require('./templates/licenses/BSD3');
+
 const Boost = require('./templates/licenses/Boost');
 const Creative = require('./templates/licenses/Creative');
-const Eclipse = require('./templates/licenses/Eclipse');
-const apache = require('./templates/licenses/apache.js');
+
+
 
 
 var object = {
@@ -67,13 +67,10 @@ const init = () => {
                 message: 'Please choose a license.',
                 choices: [
                     'None',
-                    'Apache License 2.0',
                     'MIT License',
                     'BSD 2-Clause "Simplified" License',
-                    'BSD 3-Clause "New" or "Revised" License',
                     'Boost Software Licese 1.0',
-                    'Creative Commons Zero v1.0 Universal',
-                    'Eclipse Public License 2.0',
+                    'Creative Commons Zero v1.0 Universal'
                 ]
             }
         ]).then(a => {
@@ -82,21 +79,13 @@ const init = () => {
             switch(a.license) {
                 case 'None':
                     object.licenseText = none;
-                case 'Apache License 2.0':
-                    object.licenseText = apache.License();
-                    object.licenseBadge = apache.Badge();
-                break
                 case 'MIT License':
                     object.licenseText = MIT.License(year, holder);
                     object.licenseBadge = MIT.Badge();
                 break
                 case 'BSD 2-Clause "Simplified" License':
-                    object.licenseText = BSD2.License();
+                    object.licenseText = BSD2.License(year, holder);
                     object.licenseBadge = BSD2.Badge();
-                break
-                case 'BSD 3-Clause "New" or "Revised" License':
-                    object.licenseText = BSD3.License();
-                    object.licenseBadge = BSD3.Badge();
                 break
                 case 'Boost Software Licese 1.0':
                     object.licenseText = Boost.License();
@@ -106,10 +95,7 @@ const init = () => {
                     object.licenseText = Creative.License();
                     object.licenseBadge = Creative.Badge();
                 break
-                case 'Eclipse Public License 2.0':
-                    object.licenseText = Eclipse.License();
-                    object.licenseBadge = Eclipse.Badge();
-                break
+                
             }
             
             object.title = a.title

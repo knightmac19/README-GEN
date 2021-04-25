@@ -2,8 +2,8 @@ const Badge = () => {
     return `[![License](https://img.shields.io/badge/License-BSD%202--Clause-orange.svg)](https://opensource.org/licenses/BSD-2-Clause)`
 };
 
-const License = () => {
-    return `Copyright (c) <year>, <copyright holder>
+const License = (year, holder) => {
+    return `Copyright (c) ${year}, ${holder}
     All rights reserved.
     
     Redistribution and use in source and binary forms, with or without
