@@ -8,7 +8,7 @@ const generate = (obj) => {
 
 ${obj.licenseBadge}  
 
-## <a name="languages"></a> Languages
+## <a name="languages"></a> Languages & Technologies
 [Contents](#contents)  
 ${makeTechBadges(obj.languages)}
 
