@@ -9,7 +9,7 @@ const Boost = require('./templates/licenses/Boost');
 const Creative = require('./templates/licenses/Creative');
 const Contributor = require('./templates/contributor');
 
-
+let contributorsArray = [];
 
 var object = {
     title: '',
@@ -177,9 +177,8 @@ const init = () => {
                 choices: ['Yes', 'No']
             }
         ]).then(a => {
-            let array = [];
-            array.push(new Contributor(a.name, a.email, a.github))
-            object.contributors = array;
+            contributorsArray.push(new Contributor(a.name, a.email, a.github))
+            object.contributors = contributorsArray;
             switch (a.nextStep) {
                 case 'Yes':
                     console.log(object.contributors);

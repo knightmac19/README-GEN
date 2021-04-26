@@ -1,5 +1,5 @@
 const makeTechBadges = require('./makeTechBadges');
-// const makeTechBadges = require('./makeTechBadges');
+const getContributors = require('./getContributors');
 
 const generate = (obj) => {
 
@@ -45,9 +45,7 @@ ${obj.challenges}
 
 ## <a name="contributors"></a> Contributors
 [Contents](#contents)  
-- Patrick Dunn // [pmdunn78@gmail.com](mailto:pmdunn78@gmail.com) // [github.com/knightmac19](https://github.com/knightmac19)  <br>
-- Patrick Dunn // [pmdunn78@gmail.com](mailto:pmdunn78@gmail.com) // [github.com/knightmac19](https://github.com/knightmac19)  <br>
-
+${getContributors(obj.contributors)}
 ## <a name="license"></a> License
 [Contents](#contents)  
 ${obj.licenseText}`
