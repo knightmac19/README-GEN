@@ -46,6 +46,11 @@ ${obj.challenges}
 ## <a name="contributors"></a> Contributors
 [Contents](#contents)  
 ${getContributors(obj.contributors)}
+
+## <a name="questions"></a> Questions
+[Contents](#contents)  
+Please direct any questions to [${obj.questions}](mailto:${obj.questions}).
+
 ## <a name="license"></a> License
 [Contents](#contents)  
 ${obj.licenseText}`

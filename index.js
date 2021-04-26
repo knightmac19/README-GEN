@@ -23,7 +23,8 @@ var object = {
     year: '',
     holder: '',
     licenseText: '',
-    licenseBadge: ''
+    licenseBadge: '',
+    questions: ''
 };
 
 const init = () => {
@@ -122,6 +123,11 @@ const init = () => {
                     'Boost Software Licese 1.0',
                     'Creative Commons Zero v1.0 Universal'
                 ]
+            },
+            {
+                type:'input',
+                name:'questions',
+                message: 'Please provide an email where users can direct their questions to.'
             }
         ]).then(a => {
             let year = a.year;
