@@ -7,6 +7,8 @@ const MIT = require('./templates/licenses/MIT');
 const BSD2 = require('./templates/licenses/BSD2');
 const Boost = require('./templates/licenses/Boost');
 const Creative = require('./templates/licenses/Creative');
+const Contributor = require('./templates/contributor');
+
 
 var object = {
     title: '',
@@ -16,7 +18,7 @@ var object = {
     motivation: '',
     usage: '',
     challenges: '',
-    contributors: '',
+    // contributors: [],
     year: '',
     holder: '',
     licenseText: '',
@@ -98,11 +100,11 @@ const init = () => {
                 name:'challenges',
                 message: 'What were some challenges / lessons learned during the development process?'
             },
-            {
-                type:'input',
-                name:'contributors',
-                message: 'Who contributed to the project?'
-            },
+            // {
+            //     type:'input',
+            //     name:'contributors',
+            //     message: 'Who contributed to the project?'
+            // },
             {
                 type:'input',
                 name:'year',
