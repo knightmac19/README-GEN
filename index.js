@@ -10,6 +10,7 @@ const Creative = require('./templates/licenses/Creative');
 const Contributor = require('./templates/contributor');
 
 
+
 var object = {
     title: '',
     short: '',
@@ -18,7 +19,7 @@ var object = {
     motivation: '',
     usage: '',
     challenges: '',
-    // contributors: [],
+    contributors: [],
     year: '',
     holder: '',
     licenseText: '',
@@ -100,11 +101,6 @@ const init = () => {
                 name:'challenges',
                 message: 'What were some challenges / lessons learned during the development process?'
             },
-            // {
-            //     type:'input',
-            //     name:'contributors',
-            //     message: 'Who contributed to the project?'
-            // },
             {
                 type:'input',
                 name:'year',
@@ -152,8 +148,48 @@ const init = () => {
                 break
                 
             }
-            
-            writeREADME(object)
+        }).then(() => {
+            contributorPrompt();
+        })
+    };
+
+    const contributorPrompt = () => {
+        inquirer.prompt([
+            {
+                type:'input',
+                name:'name',
+                message: 'Please provide contributor\'s name.'
+            },
+            {
+                type:'input',
+                name:'email',
+                message: 'Please provide contributor\'s email.'
+            },
+            {
+                type:'input',
+                name:'github',
+                message: 'Please provide contributor\'s github username.'
+            },
+            {
+                type:'list',
+                name:'nextStep',
+                message: 'Would you like to add another contributor?',
+                choices: ['Yes', 'No']
+            }
+        ]).then(a => {
+            let array = [];
+            array.push(new Contributor(a.name, a.email, a.github))
+            object.contributors = array;
+            switch (a.nextStep) {
+                case 'Yes':
+                    console.log(object.contributors);
+                    contributorPrompt();
+                break
+                case 'No':
+                    console.log(object.contributors);
+                    writeREADME(object);
+                break
+            }
         })
     };
 
