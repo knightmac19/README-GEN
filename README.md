@@ -33,16 +33,23 @@ README files provide a snapshot of a repository. Professional README's leave a p
 [Contents](#contents)  
 As a developer I always dreaded the monotonous task of writing README's. This process will get the README off the ground quickly and include some cool features such as the techology badges & the list of contributors.
 
+![tech badges](https://github.com/knightmac19/README-GEN/blob/main/assets/tech_badges.png)  
+
 ## <a name="usage"></a> Usage
 [Contents](#contents)  
-`git clone` --> `npm i` --> `npm start`
+Users may clone the applicaton and run it locally with the following steps:
 
-## <a name="screenshots"></a> Screenshots
-[Contents](#contents)  
+1. `git clone` 
+2. `npm i` 
+3. `npm start`
 
 ## <a name="challenges"></a> Challenges & Lessons Learned
 [Contents](#contents)  
 One embarrassingly small hangup occurred when I tried to build the bulleted list of contributors. Joining the results array using `<br>` kept breaking the bullet points in markdown until I joined the array of contributors with `\n`. 
+
+In order to capture the badges the user wanted to include, I utilized `inquirer's` `checkbox` prompt type and provided an array of possible languages and technologies. Thanks to [this repo from Ileriayo](https://github.com/Ileriayo/markdown-badges) I was able to write a `makeTechBadges` function which would return the necessary `url` for each desired badge. 
+
+![makeTechBadges function](https://github.com/knightmac19/README-GEN/blob/main/assets/build_badges_code.png)  
 
 ## <a name="contributors"></a> Contributors
 [Contents](#contents)  
